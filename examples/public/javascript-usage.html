@@ -1,0 +1,13 @@
+<script>
+    function highOrderFunction(p){
+        if(typeof p == 'function') {
+            p('ㅋㅋㅋ');
+        }else{
+            alert(p);
+        }
+    }
+    highOrderFunction(function (msg) {document.write(msg);});
+    highOrderFunction(function (msg) {console.log(msg);});
+    highOrderFunction();
+    highOrderFunction('ㅋㅋㅋ');
+</script>

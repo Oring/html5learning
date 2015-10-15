@@ -1,0 +1,26 @@
+body {
+    background-color: silver;
+}
+form input#note_text {
+    width: 350px;
+}
+ul#stickies li {
+    display: block; list-style: none;
+    z-index: 1;
+    float: left;
+    margin: 30px;
+    padding: 15px 15px 50px 15px;
+    width: 100px; height: 100px;
+    border: 1px solid #bfbfbf;
+    background-color: Gold;
+    color: black; text-decoration: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+}
+ul#stickies li span.sticky {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+ul#stickies li:nth-child(even) {
+    transform: rotate(2deg);
+}

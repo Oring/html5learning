@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스티키노트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="stickynote.css">
+    <script src="stickynote.js"></script>
+</head>
+<body>
+    <form>
+        <label for="note_color">색상: </label>
+        <select id="note_color">
+            <option value="Gold">노란색</option>
+            <option value="PaleGreen">녹색</option>
+            <option value="LightPink">분홍색</option>
+            <option value="LightBlue">파란색</option>
+        </select>
+        <label for="note_text">내용:</label> <input type="text" id="note_text">
+        <input type="button" id="add_button" value="스티키 노트 추가">
+        <input type="button" id="clear_button" value="스티키 노트 전부 삭제">
+    </form>
+    <ul id="stickies"> </ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<style>
+  .edit_content {
+    width : 500px;   height : 200px;
+    margin : 5px auto; padding : 10px;
+    border : 1px dashed red;
+  }
+  .edit_content[contenteditable=true] {
+    border : 5px inset blue;  background-color : skyblue;
+  }
+  button { margin : 5px;  }
+</style>
+<h2>contenteditable 속성 테스트</h2>
+<div class="edit_content"> contenteditable 속성은 요소를 편집 모드로 변경합니다. </div>
+<button id="edit_btn" onclick="edit_content()">편집모드 설정</button>
+<button id="finish_btn" onclick="finish_content()">편집모드 해제</button>
+<button id="show_btn" onclick="show_content()">내용 출력</button>
+<script>
+  var editTarget = document.querySelector(".edit_content");
+  function edit_content() {
+    editTarget.setAttribute("contenteditable", true);
+  }
+  function finish_content() {
+    editTarget.setAttribute("contenteditable", false);
+  }
+  function show_content() {
+    alert(editTarget.textContent);
+  }
+</script>

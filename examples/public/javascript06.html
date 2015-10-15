@@ -1,0 +1,24 @@
+<script>
+    if(100>50)
+        document.writeln("100은 50보다크다");
+    var number=10;
+    if(number%2 ==0)
+        document.writeln(number+"는 짝수");
+    else
+        document.writeln(number+"는 홀수");
+
+    var name;
+    while (true) {
+        name = window.prompt("좋아하는 프로그래밍 언어의 이름을 입력하세요", "javascript");
+        if (name == 'javascript') {
+            window.alert('자바스크립트를 좋아하는군요^^');
+        } else if (name == 'java') {
+            window.alert('자바를 좋아하는군요^^');
+            break;
+        }
+        else if (name == 'c++')
+            window.alert('C++을 좋아하는군요^^');
+        else
+            window.alert('???');
+    }
+</script>
