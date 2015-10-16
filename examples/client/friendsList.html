@@ -1,0 +1,17 @@
+<!--
+<template name="friendsList">
+    여기에 내용이 삽입됩니다. <br>
+    여기 데이터가 나옵니다 : {{datas.a}} / {{datas.b}} / {{datas.c}} <br>
+    <!-- php나 jsonp 로 구현했었으나 브라우저에서 구현되는 예제 -->
+<!--    <button id="btn">Button2</button>
+</template>
+-->
+
+<template name="friendsList">
+    {{listName}}
+    <table>
+        {{#each list}} <!-- handle bath . js 라는 프레임 워크? 결과. 화면 구성이 쉬워졌다. view 는 view 대로 -->
+            {{> friendsListItem}} <!-- data context 를 알아서 넘겨줌 (당연히 필요할 꺼니까! 알아서 줄께 !) -->
+        {{/each}}
+    </table>
+</template>
